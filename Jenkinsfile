@@ -1,3 +1,5 @@
+@Library('github.com/amarlanda/jenkins-pipeline')
+
 pipeline {
   agent any
   stages {
