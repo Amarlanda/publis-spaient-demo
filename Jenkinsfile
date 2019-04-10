@@ -28,8 +28,8 @@ podTemplate(
         )
     ]
 ) {
-    node('mypod') {
-        def commitId
+      agent any
+      stages {
         stage ('Extract') {
             checkout scm
             commitId = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
