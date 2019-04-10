@@ -1,5 +1,4 @@
 podTemplate(
-    label: 'mypod',
     inheritFrom: 'default',
     containers: [
         containerTemplate(
@@ -29,7 +28,7 @@ podTemplate(
     ]
 ) {
       agent any
-      stages {
+
         stage ('Extract') {
             checkout scm
             commitId = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
@@ -54,5 +53,5 @@ podTemplate(
                 sh "/helm upgrade --install --wait --set image.repository=${repository},image.tag=${commitId} hello hello"
             }
         }
-    }
+    
 }
