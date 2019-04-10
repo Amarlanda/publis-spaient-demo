@@ -1,10 +1,14 @@
 podTemplate(
   label: 'mypod',
   inheritFrom: 'default',
-  containers: [ containerTemplate(name: 'maven',
-  image: 'maven',
-  ttyEnabled: true,
-  command: 'cat')]
+  containers: [
+    containerTemplate(
+      name: 'maven',
+      image: 'maven',
+      ttyEnabled: true,
+      command: 'cat'
+    )
+  ]
 )
 {
   node('mypod') {
