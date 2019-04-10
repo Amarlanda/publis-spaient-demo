@@ -9,7 +9,7 @@ pipeline {
     stage('2 - amartest') {
       steps {
         sh 'ls'
-        cat .Jenkinsfile
+        sh 'cat Jenkinsfile'
       }// end of step 2
     }
   }
