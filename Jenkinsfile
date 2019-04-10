@@ -15,7 +15,7 @@ pipeline {
         sh 'ls'
         sh 'ls'
         sh 'ls'
-        sh 'echo amartest'
+        sh 'echo amartest message yoy o'
       }// end of step 2
     }
   }
