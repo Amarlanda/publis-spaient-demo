@@ -1,4 +1,6 @@
 @Library('github.com/amarlanda/jenkins-pipeline')
+def pipeline = new io.estrado.Pipeline()
+
 
 pipeline {
   agent any
