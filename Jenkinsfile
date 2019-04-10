@@ -1,5 +1,5 @@
 @Library('github.com/amarlanda/jenkins-pipeline')
-def pipeline = new io.estrado.Pipeline()
+//def pipeline = new io.estrado.Pipeline()
 
 
 pipeline {
