@@ -1,4 +1,3 @@
-@Library('github.com/amarlanda/jenkins-pipeline')
 pipeline {
   agent any
   stages {
@@ -14,7 +13,7 @@ pipeline {
         sh 'ls'
         sh 'ls'
         sh 'ls'
-    
+
       }// end of step 2
     }
   }
