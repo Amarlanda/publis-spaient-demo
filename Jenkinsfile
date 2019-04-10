@@ -15,6 +15,7 @@ pipeline {
         sh 'ls'
         sh 'ls'
         sh 'ls'
+        sh 'echo amartest'
       }// end of step 2
     }
   }
