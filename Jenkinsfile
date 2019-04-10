@@ -15,10 +15,12 @@ podTemplate(
     stage ('Extract') {
       checkout scm
     }
-    stage ('Build') {
+    try{
+      stage ('Build') {
       container ('maven') {
         mvn package
       } //container
+    }
     }//stage
   }//node
 }//podTemplate
