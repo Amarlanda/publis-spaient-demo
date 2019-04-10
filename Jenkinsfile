@@ -10,6 +10,9 @@ pipeline {
       steps {
         sh 'ls'
         sh 'cat Jenkinsfile'
+        sh 'ls'
+        sh 'ls'
+        sh 'ls'
       }// end of step 2
     }
   }
